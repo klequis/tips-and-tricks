@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Center Image</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="prism/prism.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Center Image In Div</h1>
+    </header>
+    <h3>ex-01: Example with Bootstrap Grid</h3>
+    <div class="row ex-01">
+      <div class="col-xs-5 col-md-3 col-lg-1 vcenter">
+          <div class="big-div"><b>Big Div</b><br/>I'm bigger than the Little Div and my containing div grows to accomodate my height.</div>
+      </div><!--
+      --><div class="col-xs-5 col-md-7 col-lg-9 vcenter">
+          <div class="little-div"><b>Little Div</b><br/>I'm not as tall as the div but the vcenter class is applied so I'm centered vertically.</div>
+      </div>
+    </div>
+    <h3>ex-03: Does ex-01 work when not in a Bootstrap grid?</h3>
+    <div class="ex-02 vcenter">
+      <div class="ex-01-inner-div">
+        It didn't work.
+      </div>
+    </div>
+    <h3>Center horizontally with Bootstrap</h3>
+    <div class="img-container">
+      <img class="img-responsive center-block" src="images/blue-flower.400x266.jpg" alt="blue flower">
+    </div>
+    <br/>
+    <h3>Center horizontally &amp; vertically <b>without</b> Bootstrap</h3>
+    <div class="center-image-container">
+      <img class="center-image" src="images/blue-flower.400x266.jpg" alt="blue flower">
+    </div>
+    <h3>With Flexbox - my favorite way</h3>
+    <div class="flex-image-container">
+      <img src="images/blue-flower.400x266.jpg" alt="blue flower">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="prism/prism.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
